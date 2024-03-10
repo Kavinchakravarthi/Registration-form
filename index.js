@@ -14,7 +14,7 @@ const port = 3000 ;
 const username = process.env.MONGODB_USERNAME ;
 const password = process.env.MONGODB_PASSWORD ;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.x984kjk.mongodb.net/registrationFormDB`)
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.jzerybf.mongodb.net/registrationFormDB`)
 
 const registerationschema = new mongoose.Schema({
     name : String ,
