@@ -9,15 +9,12 @@ const app = express();
 
 dotenv.config();
 
-const port = process.env.PORT || 3000 ;
+const port = 3000 ;
 
 const username = process.env.MONGODB_USERNAME ;
 const password = process.env.MONGODB_PASSWORD ;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.x984kjk.mongodb.net/registrationFormDB`,{
-    useNewUrlParser  : true ,
-    useUnifiedTopology : true 
-})
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.x984kjk.mongodb.net/registrationFormDB`)
 
 const registerationschema = new mongoose.Schema({
     name : String ,
